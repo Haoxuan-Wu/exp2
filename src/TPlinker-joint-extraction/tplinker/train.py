@@ -26,6 +26,7 @@ from tplinker import (HandshakingTaggingScheme,
                       TPLinkerBiLSTM,
                       MetricsCalculator)
 import wandb
+from wandb.sdk.wandb_login import login
 import config
 from glove import Glove
 import numpy as np
@@ -80,6 +81,8 @@ rel2id_path = os.path.join(data_home, experiment_name, config["rel2id"])
 
 
 if config["logger"] == "wandb":
+    # longin wandb
+    login(key="8db56f1a9bc984d271caa1ac7b1770f3437d4020")
     # init wandb
     wandb.init(project = experiment_name, 
                name = config["run_name"],
