@@ -6,8 +6,11 @@ import torch
 import torch.nn as nn
 import json
 from torch.nn.parameter import Parameter
-from common.components import HandshakingKernel
 import math
+
+import sys
+sys.path.append("..")
+from common.components import HandshakingKernel
 
 class HandshakingTaggingScheme(object):
     """docstring for HandshakingTaggingScheme"""

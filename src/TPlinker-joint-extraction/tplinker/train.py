@@ -19,7 +19,6 @@ import torch.optim as optim
 import glob
 import time
 import logging
-from common.utils import Preprocessor, DefaultLogger
 from tplinker import (HandshakingTaggingScheme,
                       DataMaker4Bert, 
                       DataMaker4BiLSTM, 
@@ -31,6 +30,9 @@ import config
 from glove import Glove
 import numpy as np
 
+import sys
+sys.path.append("..")
+from common.utils import Preprocessor, DefaultLogger
 
 # In[ ]:
 
@@ -233,14 +235,14 @@ indexed_valid_data = data_maker.get_indexed_data(valid_data, max_seq_len)
 train_dataloader = DataLoader(MyDataset(indexed_train_data), 
                                   batch_size = hyper_parameters["batch_size"], 
                                   shuffle = True, 
-                                  num_workers = 6,
+                                  num_workers = 0,
                                   drop_last = False,
                                   collate_fn = data_maker.generate_batch,
                                  )
 valid_dataloader = DataLoader(MyDataset(indexed_valid_data), 
                           batch_size = hyper_parameters["batch_size"], 
                           shuffle = True, 
-                          num_workers = 6,
+                          num_workers = 0,
                           drop_last = False,
                           collate_fn = data_maker.generate_batch,
                          )
