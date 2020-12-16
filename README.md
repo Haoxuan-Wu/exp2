@@ -30,7 +30,7 @@ azcopy cp "./requirements.txt" "https://jianzong.blob.core.windows.net/tloss-ucr
 
 azcopy cp "./*" "https://jianzong.blob.core.windows.net/web-lab2/?sv=2019-12-12&ss=bfqt&srt=sco&sp=rwdlacupx&se=2021-04-24T14:22:56Z&st=2020-11-17T06:22:56Z&spr=https&sig=WWSuuYpjqz%2BtTq2r43v11SrAI8q6%2FjcgiVQ1mpQtnXM%3D" --recursive=true
 
-azcopy cp "https://jianzong.blob.core.windows.net/representation-learning/baselines/tloss/results/transfer_multi_111111.csv?sv=2019-12-12&ss=bfqt&srt=sco&sp=rwdlacupx&se=2021-04-24T14:22:56Z&st=2020-11-17T06:22:56Z&spr=https&sig=WWSuuYpjqz%2BtTq2r43v11SrAI8q6%2FjcgiVQ1mpQtnXM%3D" "./results/transfer_multi_111111.csv"
+azcopy cp "https://jianzong.blob.core.windows.net/web-lab2/src/TPlinker-joint-extraction/tplinker/wandb?sv=2019-12-12&ss=bfqt&srt=sco&sp=rwdlacupx&se=2021-04-24T14:22:56Z&st=2020-11-17T06:22:56Z&spr=https&sig=WWSuuYpjqz%2BtTq2r43v11SrAI8q6%2FjcgiVQ1mpQtnXM%3D" "./wandb" --recursive=true
 
 azcopy cp "https://jianzong.blob.core.windows.net/representation-learning/baselines/tloss/models_multi_pos/*?sv=2019-12-12&ss=bfqt&srt=sco&sp=rwdlacupx&se=2021-04-24T14:22:56Z&st=2020-11-17T06:22:56Z&spr=https&sig=WWSuuYpjqz%2BtTq2r43v11SrAI8q6%2FjcgiVQ1mpQtnXM%3D" "./models_multi_pos" --recursive=true
 
