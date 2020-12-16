@@ -4,3 +4,4 @@ transformers==3.0.2
 wandb
 pyyaml
 numpy==1.15.0
+ipython
