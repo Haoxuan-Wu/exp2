@@ -131,3 +131,4 @@ dmypy.json
 # my ignore
 *.pdf
 pretrained_*/
+img/
