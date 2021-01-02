@@ -3,7 +3,7 @@ from sklearn.naive_bayes import MultinomialNB
 
 TRAIN_DATA_PATH = "../data/train.txt"
 TEST_DATA_PATH  = "../data/test.txt"
-OUTPUT_PATH     = "../output/result_nb.txt"
+OUTPUT_PATH     = "./TPlinker_data/bayes_output.txt"
 TRAIN_SIZE = 6400
 TEST_SIZE = 1600
 
